@@ -3,7 +3,7 @@ html {
     padding : 0;
 }
 /* 
-selector {property : value;}
+selector {}
 h1{
     color: red ;
 } */
@@ -32,13 +32,13 @@ p{
 }
 
 #header {
-    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-image: url("https://i.pinimg.com/originals/9f/5c/6a/9f5c6a8f8419f92ec47cc7534114145e.gif");
     background-size: cover;
 }
 #header img {
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     margin: auto;
 }
 #header p {
@@ -114,7 +114,12 @@ form {
     text-align: center;
     margin-top: 0;
 }
-submit {
+#nama {
+    text-shadow: yellow -1px -2px 0.5em;
+    letter-spacing: normal;
+    /* text-shadow: 5px 2px 2px blue; */
+}
+.submit {
     background-color: #3fb6b2;
     padding: 12px 45px;
     border-radius: 5px;
@@ -124,6 +129,7 @@ submit {
     outline: none;
     margin: 0;
     font-weight: bold;
+    transition: 0.2s;
 }
 .submit:hover {
     background-color: #43a09d;

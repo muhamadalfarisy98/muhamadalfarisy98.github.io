@@ -10,7 +10,7 @@
     <!--Header Start-->
     <div id="header" class="section">
         <img alt="" class="img-circle" src="12.png">
-        <p>Muhamad Alfarisy</p>
+        <p id="nama">Muhamad Alfarisy</p>
     </div>
     <!--Header End-->
 
@@ -114,11 +114,12 @@
 
     <div class="section">
         <h1><span>Feedback</span></h1>
-        <from>
+        <from action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeH9nCAdn5Q74jSXtOXIOrVwWIoUFpP_4VWUiCVX8QJLlPV4g/formResponse" method="post" >
             <input name="name" placeholder="Name" type="text" required /><br/>
             <input name="email" placeholder="Email" type="email" required /><br/>
             <textarea name="message" placeholder="Message" required ></textarea>
-            <input type="submit" value="SEND" class="submit">
+            <input type="submit" value="SEND" class="submit" onclick="alert('nice')">
+            <input type="reset" value="RESET" class="submit1">
         </from>
     </div>
 
