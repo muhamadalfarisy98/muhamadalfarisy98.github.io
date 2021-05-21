@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title >My Profile </title>
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
@@ -13,7 +13,7 @@
         <p id="nama">Muhamad Alfarisy</p>
     </div>
     <!--Header End-->
-
+    <!--Music-->
     <audio controls autoplay loop>
         <source src="https://www.musikery.com/mp3/c5562ee93846d44805351ed00239e8a9775415a8d2ea369974c0ae2dc577fdd5.mp3" type="audio/mpeg">
         Audio element not supported by your browser
@@ -22,8 +22,8 @@
     <div class="section">
         <h1><span>About Me</span></h1>
         <p>
-            Hey my name is <strong>Faris</strong>. i'm an electrical engineer who is capable to work as a team or individual. Having interest at control system, AI/ML, electronics, web-development. I'm enjoy learning something new.   
-            eating, and coding is part of my hobbies.
+            Hey my name is <strong>Faris</strong>. i'm an Electrical Engineer who is capable to work as a team or individual. Having interest at control system, AI/ML, electronics, web-development, and doing research. I also enjoy learning something new regardless of my background.   
+            eating, and coding is part of my hobbies. Chess, Futsal, Badminton, Ping-pong are my most favorite sports! I learned about chess opening - end game, Badminton netting trick and Futsal dribbling for fun hehe.
         </p>
         <p class="quote">"if eat then sleep"</p>
     </div>
@@ -33,9 +33,9 @@
         <h1><span>Working Experiences</span></h1>
         <table>
             <tr>
-                <th bgcolor="orange">Time</th>
-                <th bgcolor="orange"> Job description</th>
-                <th bgcolor="orange">Company</th>
+                <th bgcolor="greenyellow">Time</th>
+                <th bgcolor="greenyellow"> Job description</th>
+                <th bgcolor="greenyellow">Company</th>
             </tr>
             <tr>
                 <td>December 2020 - Now</td>
@@ -80,7 +80,7 @@
         </table>
     </div>
 
-    <!--Skill section-->
+    <!--Skillset section-->
     <div class="section">
         <h1><span>Skill sets</span></h1>
         <ul>
@@ -88,10 +88,10 @@
                 <progress min="0" max="100" value ="85"></progress>                 
             </li>
             <li>C / C++ <br />
-                <progress min="0" max="100" value="75"></progress>
+                <progress min="0" max="100" value="70"></progress>
             </li>
             <li>SQL / PostgreSQL / MySQL <br />
-                <progress min="0" max="100" value="75"></progress>
+                <progress min="0" max="100" value="80"></progress>
             </li>
             <li>JavaScript <br />
                 <progress min="0" max="100" value="50"></progress>
@@ -128,8 +128,8 @@
             <input name="name" placeholder="Name" type="text" required /><br/>
             <input name="email" placeholder="Email" type="email" required /><br/>
             <textarea name="message" placeholder="Message" required ></textarea>
-            <input type="submit" value="SEND" class="submit" onclick="alert('nice')">
-            <input type="reset" value="RESET" class="submit1">
+            <input type="submit" value="SEND" class="submit" onclick="alert('Thankyou!')">
+            <!-- <input type="reset" value="RESET" class="reset"> -->
         </from>
     </div>
 
@@ -137,7 +137,7 @@
     <div class="section" id="contacts">
         <h1><span>Follow Me</span></h1>
         <div>
-            <a href="https://www.linkedin.com/in/muhamadalfarisy/" target="_blank">
+            <a id = "linked" href="https://www.linkedin.com/in/muhamadalfarisy/" target="_blank">
                 <img alt="Linkedin" src="lin.png" />
             </a>
             <a href="https://github.com/muhamadalfarisy98/" target="_blank">
@@ -149,6 +149,6 @@
     <div class="copyright">
         &copy; 2021. All rights reserved.
     </div>
-
+    <script src="app.js"></script>
 </body>
 </html>
