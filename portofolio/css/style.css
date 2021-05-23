@@ -165,3 +165,6 @@ nav {
     padding-bottom: 10px;
     color: grey;
 }
+a#home:hover{
+    color:black;
+}
