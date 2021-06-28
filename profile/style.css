@@ -105,6 +105,32 @@ iframe, audio {
     border: 3px solid #3fb6b2;
 }
 
+nav {
+    width: 100%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.nav-links ul li a{
+    font-size: 30pt;
+    color: yellowgreen;
+    text-decoration: none;
+}
+
 hr {
     border: 0;
     height: 1px;
