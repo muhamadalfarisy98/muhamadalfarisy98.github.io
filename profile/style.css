@@ -177,7 +177,17 @@ input, textarea {
     color: #787575;
     border-radius: 5px;
     width: 70%;
+    /* width: 250px; */
     outline: none;
+    
+    align-items: center;
+    /* align-self: center; */
+}
+#fb {
+    text-align: center;
+}
+#ss{
+    text-align: center;
 }
 #contacts img {
     height: 50px;
@@ -199,4 +209,8 @@ input, textarea {
     text-align: right;
     padding-bottom: 10px;
     color: grey;
+}
+
+.nav-links a:hover {
+    background-color: yellow;
 }
