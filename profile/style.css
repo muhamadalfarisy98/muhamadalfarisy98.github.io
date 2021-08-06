@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size: 15pt;
+    font-size: 30px;
     color: #20bcd5;
     text-align: center;
     padding: 18px 0 18px 0;
@@ -58,7 +58,7 @@ p{
 }
 
 .quote {
-    font-size: 12pt;
+    font-size: 25px;
     text-align: right;
     margin-top: 10px;
 }
@@ -176,7 +176,7 @@ input, textarea {
     background-color: #efefef;
     color: #787575;
     border-radius: 5px;
-    width: 70%;
+    width: 50%;
     /* width: 250px; */
     outline: none;
     
@@ -213,4 +213,7 @@ input, textarea {
 
 .nav-links a:hover {
     background-color: yellow;
+}
+#about {
+    font-size: 24px;
 }
