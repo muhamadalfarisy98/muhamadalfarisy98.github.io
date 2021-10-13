@@ -159,11 +159,12 @@ form {
 }
 .submit:hover {
     background-color: #43a09d;
+    transform: scale(1.1);
 }
 
-.hover {
-    transform: scale(1.05);
-}
+/* .hover {
+    transform: scale(1.1);
+} */
 
 textarea {
     height: 100px;
