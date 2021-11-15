@@ -32,7 +32,7 @@ p{
 }
 
 #header {
-    background-image: url("https://i.pinimg.com/originals/9f/5c/6a/9f5c6a8f8419f92ec47cc7534114145e.gif");
+    /* background-image: url("https://i.pinimg.com/originals/9f/5c/6a/9f5c6a8f8419f92ec47cc7534114145e.gif"); */
     background-size: cover;
 }
 #header img {
