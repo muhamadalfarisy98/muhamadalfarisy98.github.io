@@ -35,9 +35,16 @@ p{
 #header {
     /* background-image: url("https://i.pinimg.com/originals/9f/5c/6a/9f5c6a8f8419f92ec47cc7534114145e.gif"); */
     height: 300px;
-    background-image: url("https://www.itb.ac.id/files/dokumentasi/1602641777-ilustrasi---matematika.png");
+    background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1597551681492-10c86e481548?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjEwfHxiZSUyMGJldHRlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
     background-size: cover;
+    height: 700px;
 }
+
+#content_blog {
+    background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80");
+}
+
 #header img {
     display: block;
     width: 200px;
@@ -47,7 +54,7 @@ p{
 #header p {
     font-size: 25pt;
     /* color: #3b464c; */
-    color: white;
+    color: black;
     padding-top: 5px;
     margin: 0;
     font-weight: bold;
@@ -145,7 +152,7 @@ form {
     margin-top: 0;
 }
 #nama {
-    text-shadow: yellow -1px -2px 0.5em;
+    text-shadow: cyan -1px -2px .5em;
     letter-spacing: normal;
     /* text-shadow: 5px 2px 2px blue; */
 }
