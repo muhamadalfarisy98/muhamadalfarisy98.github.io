@@ -1,16 +1,20 @@
+<!doctype html>
+<!-- HTML 5 doc type : will leave some funky incomplete styling, tapi gak ngefek apa2 -->
 <html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- [RESPONSIVE MET TAG] : to ensure proper rendering and touch zooming for all devices. scale up component using css media query -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
       <title >Home Profile </title>
       <link rel="shortcut icon" type="image" href="assets/logo.png">
-      
+            
       <link rel="stylesheet" href="static/src/css/style.css" >
-
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
       <!-- Font awesome  -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -64,48 +68,52 @@
     <!-- </audio> -->
     
     <!--About me-->
+    
     <div class="section" id="about_me">
 
       <div class="row">
-        <div class="col-4">
+        <div class="col-sm-4">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/QAJWwb9VMC4" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="col-4">
+        <div class="col-sm-4">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/UN5kJqsl0Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="col-4">
+        <div class="col-sm-4">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/f531OqoI3Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
       </div>
       <br/>
-      <div class="row">
-        <div class="col-4">
+      <div class="row justify-content-center">
+        <div >
           <iframe width="560" height="315" src="https://www.youtube.com/embed/oUNWgZsEsUU" title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="col-4">
+        <div >
           <iframe width="560" height="315" src="https://www.youtube.com/embed/5pQo0Poym00" title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="col-4">
+        <div >
           <iframe width="560" height="315" src="https://www.youtube.com/embed/5bcbOnckj9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         
       </div>
         <br/>
+
+        
+
         <h1><span>About Me</span></h1>
 
         <div class="row">
           <div class="col">
             <p id="about" style=" text-align: justify;">
-              Hi! my name is <b>Faris</b>. I love doing math, coding, eating, and enjoy travelling. 
+              Hi! my name is <mark><b>Faris</b></mark>. I love doing math, coding, <s>eating</s>, and enjoy travelling. 
               Sometimes i become a chess hustler, playmaker role in Futsal, netting Badminton player (<b><i>deception skills hehe</i></b>), and Ping-pong slasher (<b><i>doing tricky things is really fun</i></b>). 
               I also play guitar and watching TedxTalks or standup comedy in my free time.
               <br/><br/>
@@ -134,8 +142,8 @@
             <div class="col-3">
                 <!-- list group 1 -->
                 <ul class="list-group">
-                  <li class="list-group-item"><span class="badge" style="color:red;"><i>New</i></span><a class="nav-link"  href="https://medium.com/@muhamadalfarisy98/kepadamu-yang-tak-bisa-kusebut-namanya-71f7d035a44c"
-                      target="_blank">Kepadamu yang tak bisa kusebutkan namanya</a> </li>
+                  <li class="list-group-item"><a class="nav-link"  href="https://medium.com/@muhamadalfarisy98/kepadamu-yang-tak-bisa-kusebut-namanya-71f7d035a44c"
+                      target="_blank">Kepadamu yang tak bisa kusebutkan namanya <span class="badge badge-danger" ><i>New</i></span></a> </li>
                   <li class="list-group-item"><a class="nav-link ongoing"  href="#">Dikejar deadline</a></li>
                   <li class="list-group-item"><a class="nav-link ongoing"  href="#">Adrenaline rush</a></li>
                   <li class="list-group-item"><a class="nav-link ongoing"  href="#">Hustling Culture</a></li>
