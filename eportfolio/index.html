@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muhamad Alfarisy | Software &amp; Electrical Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-dim": "#c1d0e6",
+                        "surface-dim": "#060e20",
+                        "on-secondary-container": "#c2d2e8",
+                        "on-secondary-fixed-variant": "#4a596c",
+                        "on-primary": "#005762",
+                        "on-secondary": "#414f62",
+                        "surface-container-low": "#091328",
+                        "background": "#060e20",
+                        "primary-fixed-dim": "#00d4ec",
+                        "on-tertiary-fixed-variant": "#004f69",
+                        "on-error": "#490006",
+                        "secondary": "#cfdef5",
+                        "on-primary-fixed-variant": "#005762",
+                        "primary": "#81ecff",
+                        "on-tertiary-container": "#00465d",
+                        "on-tertiary": "#004f69",
+                        "on-tertiary-fixed": "#003041",
+                        "surface-bright": "#1f2b49",
+                        "inverse-primary": "#006976",
+                        "on-surface-variant": "#a3aac4",
+                        "inverse-surface": "#faf8ff",
+                        "on-secondary-fixed": "#2e3d4e",
+                        "on-background": "#dee5ff",
+                        "secondary-fixed": "#cfdef5",
+                        "on-surface": "#dee5ff",
+                        "on-primary-fixed": "#003840",
+                        "tertiary-dim": "#6cc3eb",
+                        "on-primary-container": "#004d57",
+                        "error-dim": "#d7383b",
+                        "outline-variant": "#40485d",
+                        "inverse-on-surface": "#4d556b",
+                        "primary-dim": "#00d4ec",
+                        "on-error-container": "#ffa8a3",
+                        "outline": "#6d758c",
+                        "surface-tint": "#81ecff",
+                        "tertiary-fixed": "#7bd1fa",
+                        "surface-variant": "#192540",
+                        "surface-container-lowest": "#000000",
+                        "tertiary-fixed-dim": "#6cc3eb",
+                        "surface-container-highest": "#192540",
+                        "surface-container-high": "#141f38",
+                        "tertiary": "#9bddff",
+                        "error": "#ff716c",
+                        "primary-fixed": "#00e3fd",
+                        "secondary-fixed-dim": "#c1d0e6",
+                        "secondary-container": "#39485a",
+                        "primary-container": "#00e3fd",
+                        "error-container": "#9f0519",
+                        "surface": "#060e20",
+                        "tertiary-container": "#7bd1fa",
+                        "surface-container": "#0f1930"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #060e20; color: #dee5ff; }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .font-label { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .tonal-shift-no-border { border: none !important; }
+        .bg-grid-pattern {
+            background-image: radial-gradient(#192540 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#060e20]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#dee5ff] font-headline">
+                Eportfolio
+            </div>
+<div class="hidden md:flex items-center gap-8 font-label">
+<a class="text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#about">About</a>
+<a class="text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#skills">Skills</a>
+<a class="text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#education">Education</a>
+<a class="text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#experience">Experience</a>
+<a class="text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#portfolio">Portfolio</a>
+<a class="text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-grid-pattern">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-label uppercase tracking-widest text-primary">Available for new challenges</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-background mb-8 leading-[1.1]">
+                        Software Engineer &amp; <br/>
+<span class="text-primary italic">Electrical Engineer</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                        I bridge the gap between high-performance software architecture and precision hardware design. Building scalable digital solutions with a fundamental understanding of the physical layers beneath.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 font-label font-bold text-base hover:shadow-[0_0_20px_rgba(129,236,255,0.4)] transition-all" href="#portfolio">
+                            View Projects
+                        </a>
+<a class="px-8 py-4 border border-outline-variant text-on-background font-label font-bold text-base hover:bg-surface-variant transition-all" href="#about">
+                            Read Bio
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-4 hidden lg:flex items-center justify-center">
+<div class="relative w-full aspect-square bg-surface-container-high flex items-center justify-center p-8 overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+<img alt="Professional portrait of Muhamad Alfarisy in a high-tech studio setting with soft cyan ambient light" class="w-full h-full object-cover contrast-125 mix-blend-lighten" data-alt="Close-up professional portrait of a software engineer with glasses, looking thoughtfully at the camera, tech studio background" src="1767943218807.jpeg"/>
+<div class="absolute inset-0 border-[20px] border-background"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="font-label text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Background</span>
+<h2 class="font-headline text-4xl font-bold mb-8">The Dual-Domain Perspective</h2>
+</div>
+<div class="space-y-6 font-body text-lg text-on-surface-variant leading-relaxed">
+<p>
+                            An experienced software engineer with <strong class="text-on-background">5+ years</strong> in web/backend development in both startups and large-scale tech environments. Specializing in <strong class="text-on-background">Golang, Python, Java, JavaScript,</strong> and <strong class="text-on-background">Odoo ERP</strong> with a strong academic foundation (<strong class="text-on-background">ITB, GPA 4.00</strong>).
+                        </p>
+<p>
+                            Proven track record in building domain-critical systems (payroll, reporting, e-commerce), authoring technical RFCs, conducting product assessments, and leading engineering initiatives including on-call, sprint tech lead, and release captain roles.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-24 bg-background" id="skills">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold mb-4 text-center">Technical Arsenal</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Languages & Core -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="terminal">terminal</span>
+<h3 class="font-headline text-xl font-bold">Languages & Core</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Golang</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Java</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Python</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">JavaScript</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">SQL</span>
+</div>
+</div>
+<!-- Frameworks -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="layers">layers</span>
+<h3 class="font-headline text-xl font-bold">Frameworks</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Odoo</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">SpringBoot</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">ReactJS</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">NodeJS</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Laravel</span>
+</div>
+</div>
+<!-- Technologies -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="memory">memory</span>
+<h3 class="font-headline text-xl font-bold">Technologies</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">gRPC</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">REST</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">GraphQL</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Kafka</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Redis</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Docker</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Kubernetes</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">PostgreSQL</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">MongoDB</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">MySQL</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Nginx</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">RabbitMQ</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">NSQ</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Git</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Protobuf</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Blockchain</span>
+</div>
+</div>
+<!-- Cloud & DevOps -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="cloud">cloud</span>
+<h3 class="font-headline text-xl font-bold">Cloud & DevOps</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">GCP</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">AWS</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">CI/CD</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Grafana</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Terraform</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Linux</span>
+</div>
+</div>
+<!-- Practices -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="engineering">engineering</span>
+<h3 class="font-headline text-xl font-bold">Practices</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">System Design</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">C4</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">UML</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">RFC Authoring</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Code Review</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Agile/Scrum</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">Event-Driven Architecture</span>
+<span class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm">On-Call & Incident Response</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="py-24 bg-surface-container-low" id="education">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold mb-4 text-center">Education</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Master's Degree -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="school">school</span>
+<h3 class="font-headline text-xl font-bold">Master of Science in Electrical Engineering, IT Services</h3>
+</div>
+<p class="font-body text-on-surface-variant mb-4">Bandung Institute of Technology</p>
+<p class="font-label text-sm text-primary mb-4">Aug 2023 - Apr 2025</p>
+<ul class="space-y-2 font-body text-on-surface-variant text-sm">
+<li>Course taken: Service Oriented Architecture, Object Oriented Application Development, Service Management, Advance Mathematics, Research Method, IT Service Design, IT Risk Management, Application Management Development, Intelligent System, Advanced Digital Transformation</li>
+<li>Focus: Data science, Service computing, Blockchain, IoT, ITSM</li>
+<li>GPA: 4.00 / 4.00</li>
+</ul>
+</div>
+<!-- Bachelor's Degree -->
+<div class="bg-surface-container-high p-8 group hover:translate-y-[-4px] transition-transform">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="school">school</span>
+<h3 class="font-headline text-xl font-bold">Bachelor of Science in Electrical Engineering</h3>
+</div>
+<p class="font-body text-on-surface-variant mb-4">Bandung Institute of Technology</p>
+<p class="font-label text-sm text-primary mb-4">Aug 2016 - Aug 2020</p>
+<ul class="space-y-2 font-body text-on-surface-variant text-sm">
+<li>Capstone Design Project: Design and Implementation of Hardware, Control Position of Stepper Motor Using Profile Acceleration and Deceleration in Real-Time, and Supervised Machine Learning Model on System Deficiency Detection Nitrogen of Lettuce Hydroponic Nutrient Film Technique</li>
+<li>Assistant lecturer, assistant laboratory, assistant research, internship, class coordinator, organizations, part-timer engineer/student</li>
+<li>GPA: 3.74 / 4.00</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-24 bg-surface-container-low" id="experience">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold mb-16 border-l-4 border-primary pl-6">Professional Timeline</h2>
+<div class="space-y-16 relative before:absolute before:left-[11px] before:top-2 before:bottom-0 before:w-[2px] before:bg-outline-variant">
+<!-- Exp 1 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-1.5 w-6 h-6 bg-background border-2 border-primary rounded-full group-hover:bg-primary transition-colors"></div>
+<span class="font-label text-sm text-primary font-bold mb-2 block tracking-wider uppercase">Nov 2025 — Present</span>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-1">Product Engineer Backend</h3>
+<p class="font-label text-on-surface-variant font-medium mb-6">SawitPRO</p>
+<ul class="space-y-3 font-body text-on-surface-variant">
+<li class="flex items-start gap-3">
+    <!-- ~Rp 193B -->
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span> 
+                                Built and maintained core backend services for palm oil plantation management platform.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Designed payroll report system with DB migration, async processing via GCP Pub/Sub, increasing cost reporting accuracy by up to 95%.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Implemented comprehensive activity audit trail achieving 100% data accountability.
+                            </li>
+</ul>
+</div>
+<!-- Exp 2 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-1.5 w-6 h-6 bg-background border-2 border-outline-variant rounded-full group-hover:border-primary transition-colors"></div>
+<span class="font-label text-sm text-primary font-bold mb-2 block tracking-wider uppercase">Aug 2025 — Nov 2025</span>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-1">Sr. Software Engineer</h3>
+<p class="font-label text-on-surface-variant font-medium mb-6">Cavos (Stealth AI Startup)</p>
+<ul class="space-y-3 font-body text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Engineered scalable Voice AI call center services handling 60,000+ minutes/month with 24/7 availability.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Optimized high-volume outbound batch processing architecture, maintaining call goal achievement rate >95%.
+                            </li>
+</ul>
+</div>
+<!-- Exp 3 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-1.5 w-6 h-6 bg-background border-2 border-outline-variant rounded-full group-hover:border-primary transition-colors"></div>
+<span class="font-label text-sm text-on-surface-variant font-bold mb-2 block tracking-wider uppercase">Jul 2024 — Dec 2024</span>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-1">Lead Odoo Technical</h3>
+<p class="font-label text-on-surface-variant font-medium mb-6">Arkana Solusi Digital</p>
+<ul class="space-y-3 font-body text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Led engineering team for e-commerce project; handled deployment and developed internal HCM product.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Developed, reviewed, and maintained Odoo modules; collaborated with functional leads and PMs.
+                            </li>
+</ul>
+</div>
+<!-- Exp 4 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-1.5 w-6 h-6 bg-background border-2 border-outline-variant rounded-full group-hover:border-primary transition-colors"></div>
+<span class="font-label text-sm text-on-surface-variant font-bold mb-2 block tracking-wider uppercase">Jun 2023 — Jun 2024</span>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-1">Middle Software Engineer</h3>
+<p class="font-label text-on-surface-variant font-medium mb-6">Efishery</p>
+<ul class="space-y-3 font-body text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Migrated AWS infrastructure to GCP, reducing operational costs by 25%.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Improved CI/CD deployment pipeline speed by 40%.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Migrated services from Nomad to Kubernetes, increasing reliability and business transaction volume.
+                            </li>
+</ul>
+</div>
+<!-- Exp 5 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-1.5 w-6 h-6 bg-background border-2 border-outline-variant rounded-full group-hover:border-primary transition-colors"></div>
+<span class="font-label text-sm text-on-surface-variant font-bold mb-2 block tracking-wider uppercase">Jan 2022 — May 2023</span>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-1">Software Engineer</h3>
+<p class="font-label text-on-surface-variant font-medium mb-6">Tokopedia</p>
+<ul class="space-y-3 font-body text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Modernized REST endpoints to gRPC, enhancing performance by 60%.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Built sorting and bulk processing features, reducing manual dev tasks by 15%.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Developed feature sorting product bundle by price and preorder status, increasing product sales.
+                            </li>
+</ul>
+</div>
+<!-- Exp 6 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-1.5 w-6 h-6 bg-background border-2 border-outline-variant rounded-full group-hover:border-primary transition-colors"></div>
+<span class="font-label text-sm text-on-surface-variant font-bold mb-2 block tracking-wider uppercase">Dec 2020 — Dec 2021</span>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-1">Middle Odoo Software Engineer</h3>
+<p class="font-label text-on-surface-variant font-medium mb-6">Arkana Solusi Digital</p>
+<ul class="space-y-3 font-body text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Implemented Odoo framework to develop modules: RESTful API, reporting, inventory, accounting.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Tuned ORM performance, reducing query time from hours to seconds.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                Developed dashboard modules using JavaScript, XML, HTML, SCSS, Python.
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-24 bg-background" id="portfolio">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline text-5xl font-bold mb-4">Selected Work</h2>
+<p class="font-body text-on-surface-variant text-lg">A showcase of engineering and design.</p>
+</div>
+<div class="h-[2px] flex-grow mx-12 mb-4 bg-surface-container-high hidden md:block"></div>
+<div class="font-label font-bold text-primary tracking-widest text-sm uppercase">2021 — 2024</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Project 1 -->
+<!-- <div class="group">
+<div class="bg-surface-container-high aspect-[16/9] overflow-hidden mb-6 relative">
+<img alt="A high-tech dashboard interface showing complex data analytics with dark blue and cyan color scheme" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Screenshot of a sleek enterprise ERP dashboard with glowing charts, data grids, and cyan accent markers on a dark UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAur8ZNWEthkYgTrZuzyN4pa6C26fiXjQOuhrFcJ7br0H3IZ5bmhsc_dgGsfIhKVsGvhTDo6LgXMV7oBkOP7pK0CPwAtzVSWshxbDVtmLy_YJxeVrHkuBqLmlZRkOmOZdx7GoZrYabweuUfO7zv_lcN7ZQ5UMOuumnd-GLALCyscxqxBs1wmxp-dt1--076bbLDggOwfPYr-5ooOZcakYlxsUqVAxWla0RS2qdPtABDyYU8Ddag35WC0iY9aUj_pKTbKJdDR5d1M-5g"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Omni-Channel ERP Suite</h3>
+<p class="font-body text-on-surface-variant mb-4">A full-scale enterprise management system built on Odoo framework.</p>
+<div class="flex gap-3">
+<span class="text-xs font-label uppercase text-primary/70">Python</span>
+<span class="text-xs font-label uppercase text-primary/70">PostgreSQL</span>
+<span class="text-xs font-label uppercase text-primary/70">XML</span>
+</div>
+</div>
+</div>
+</div> -->
+<!-- Project 2 -->
+<!-- <div class="group">
+<div class="bg-surface-container-high aspect-[16/9] overflow-hidden mb-6 relative">
+<img alt="Abstract representation of IoT connectivity with glowing circuits and connected nodes in a 3D space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Macro photo of a custom designed circuit board with glowing green and blue LEDs, representing IoT hardware and software integration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdgYX5gVjZuZbsYKhKCUhNk1YbLxsOFOxDPi_tnqPIbIrH19AGSZ6QL6TnGPuNaltr10GSHZ_SAhNWxbKcCEEMCfib7-uk-xUxLcuvjGCXEFVPAmifFHtOizE7mlXUpwGzZ7K5q4RtjTPXgzFNwX9fC-qIvIp9oBWSz-umIOluR-bcI8q6DKfzu7Eo7z6TEkt5O7Ja-k5sA7rXPVetvTFDDY1o_PMv9lEOG-JP5iD0_QhtQZez4peIX65hwfeBjn0WgRSC967psLQg"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Smart Grid Monitor</h3>
+<p class="font-body text-on-surface-variant mb-4">Hardware-software integration for real-time electrical monitoring.</p>
+<div class="flex gap-3">
+<span class="text-xs font-label uppercase text-primary/70">C++</span>
+<span class="text-xs font-label uppercase text-primary/70">Node.js</span>
+<span class="text-xs font-label uppercase text-primary/70">MQTT</span>
+</div>
+</div>
+</div>
+</div> -->
+<!-- Project 3 -->
+<div class="group">
+<div class="bg-surface-container-high aspect-[16/9] overflow-hidden mb-6 relative">
+<img alt="Screenshot of a checkout platform interface" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Backend service for checkout and cart process" src="../portfolio/assets/img/portfolio/web/eclothestore.png"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Checkout Platform App</h3>
+<p class="font-body text-on-surface-variant mb-4">A backend service that handles checkout and add to cart process, implemented clean architecture.</p>
+<div class="flex gap-3">
+<span class="text-xs font-label uppercase text-primary/70">GraphQL</span>
+<span class="text-xs font-label uppercase text-primary/70">Redis</span>
+<span class="text-xs font-label uppercase text-primary/70">Clean Architecture</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group">
+<div class="bg-surface-container-high aspect-[16/9] overflow-hidden mb-6 relative">
+<img alt="Screenshot of Flutter mobile app integrated with Odoo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Integration of Odoo and Flutter mobile app" src="../portfolio/assets/img/portfolio/app/flutter.jpeg"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Odoo & Flutter Mobile App Integration</h3>
+<p class="font-body text-on-surface-variant mb-4">A backend service that handles checkout and add to cart process, implemented clean architecture.</p>
+<div class="flex gap-3">
+<span class="text-xs font-label uppercase text-primary/70">Flutter</span>
+<span class="text-xs font-label uppercase text-primary/70">Odoo</span>
+<span class="text-xs font-label uppercase text-primary/70">REST API</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="group">
+<div class="bg-surface-container-high aspect-[16/9] overflow-hidden mb-6 relative">
+<img alt="Screenshot of Epetshop website" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Full-stack petshop website" src="../portfolio/assets/img/portfolio/web/epetshop.png"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Epetshop Website</h3>
+<p class="font-body text-on-surface-variant mb-4">A full-stack project which utilized Laravel to build petshop website.</p>
+<div class="flex gap-3">
+<span class="text-xs font-label uppercase text-primary/70">Laravel</span>
+<span class="text-xs font-label uppercase text-primary/70">MVC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="group">
+<div class="bg-surface-container-high aspect-[16/9] overflow-hidden mb-6 relative">
+<img alt="Screenshot of News mobile app" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Mobile app for reading news" src="../portfolio/assets/img/portfolio/app/flutter2.png"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-primary transition-colors">News Mobile App</h3>
+<p class="font-body text-on-surface-variant mb-4">Utilized Flutter to build mobile application which can be used to read news, Implemented auth with firebase and used public API for getting news data.</p>
+<div class="flex gap-3">
+<span class="text-xs font-label uppercase text-primary/70">Flutter</span>
+<span class="text-xs font-label uppercase text-primary/70">Firebase</span>
+<span class="text-xs font-label uppercase text-primary/70">API</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-24 bg-background bg-grid-pattern" id="contact">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Left Column -->
+<div>
+<h2 class="font-headline text-4xl font-bold mb-8">Connection</h2>
+<p class="font-body text-on-surface-variant mb-8">Let's build something extraordinary together. Reach out for collaborations, opportunities, or just to connect.</p>
+<div class="space-y-4">
+<p class="font-label text-primary font-bold">Email</p>
+<p class="font-body text-on-surface-variant">muhamadalfarisy98@gmail.com</p>
+</div>
+<div class="mt-8">
+<p class="font-label text-primary font-bold mb-4">Follow Me</p>
+<div class="flex gap-4">
+<a href="https://github.com/muhamadalfarisy98" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">code</span>
+</a>
+<a href="https://www.linkedin.com/in/muhamadalfarisy/" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">work</span>
+</a>
+<a href="https://medium.com/@muhamadalfarisy98" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">article</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column -->
+<div>
+<form id="contact-form" class="space-y-6">
+<div>
+<label class="block font-label text-on-surface-variant mb-2">Name</label>
+<input name="name" type="text" class="w-full bg-[#091328] border border-outline-variant px-4 py-3 text-on-background focus:border-[#00E5FF] focus:ring-1 focus:ring-[#00E5FF] transition-colors" placeholder="Your Name" required>
+</div>
+<div>
+<label class="block font-label text-on-surface-variant mb-2">Email</label>
+<input name="email" type="email" class="w-full bg-[#091328] border border-outline-variant px-4 py-3 text-on-background focus:border-[#00E5FF] focus:ring-1 focus:ring-[#00E5FF] transition-colors" placeholder="your.email@example.com" required>
+</div>
+<div>
+<label class="block font-label text-on-surface-variant mb-2">Message</label>
+<textarea name="message" rows="5" class="w-full bg-[#091328] border border-outline-variant px-4 py-3 text-on-background focus:border-[#00E5FF] focus:ring-1 focus:ring-[#00E5FF] transition-colors" placeholder="Tell me about your project..." required></textarea>
+</div>
+<button type="submit" class="bg-primary text-on-primary px-8 py-4 font-label font-bold text-base hover:shadow-[0_0_20px_rgba(129,236,255,0.4)] transition-all flex items-center gap-2 mx-auto">
+<span class="material-symbols-outlined text-sm">send</span>
+Send
+</button>
+<p id="contact-status" class="text-sm text-on-surface-variant text-center mt-2"></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#091328] tonal-layering">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-[#dee5ff] font-headline">
+                
+            </div>
+<p class="font-['Manrope'] text-sm tracking-wide text-[#dee5ff]/50">
+                © 2026 
+            </p>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors opacity-80 hover:opacity-100" href="https://github.com/muhamadalfarisy98" target="_blank">GitHub</a>
+<a class="font-['Manrope'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors opacity-80 hover:opacity-100" href="https://www.linkedin.com/in/muhamadalfarisy/" target="_blank">LinkedIn</a>
+<a class="font-['Manrope'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors opacity-80 hover:opacity-100" href="https://medium.com/@muhamadalfarisy98" target="_blank">Medium</a>
+<!-- <a class="font-['Manrope'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors opacity-80 hover:opacity-100" href="#">Documentation</a>
+<a class="font-['Manrope'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a> -->
+</div>
+</div>
+</footer>
+<script>
+    const contactForm = document.getElementById('contact-form');
+    const contactStatus = document.getElementById('contact-status');
+    const googleSheetUrl = 'https://script.google.com/macros/s/AKfycbw318AJQNwmft8uVxlKAq17qF1lP9lPcc3U1A5oGIH9G49P_KagBA-GydTHG9gn_ggDKQ/exec';
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            contactStatus.textContent = 'Sending signal...';
+            contactStatus.classList.remove('text-red-500');
+            contactStatus.classList.add('text-primary');
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(googleSheetUrl, {
+                    method: 'POST',
+                    body: formData,
+                });
+                if (response.ok) {
+                    contactStatus.textContent = 'Signal transmitted successfully. Thank you!';
+                    contactStatus.classList.remove('text-red-500');
+                    contactStatus.classList.add('text-primary');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Failed to transmit signal.');
+                }
+            } catch (error) {
+                contactStatus.textContent = 'Unable to send. Please try again later.';
+                contactStatus.classList.remove('text-primary');
+                contactStatus.classList.add('text-red-500');
+            }
+        });
+    }
+</script>
+</body></html>
